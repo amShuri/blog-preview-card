@@ -74,12 +74,19 @@ body {
   font-weight: var(--font-weight-medium);
 }
 
-.card-title {
+.card-title a {
+  color: var(--dark-gray-clr);
   font-size: 1.35rem;
   font-weight: var(--font-weight-bold);
+  text-decoration: none;
 }
 
-.card-description {
+.card-title a:hover,
+.card-title a:focus {
+  color: var(--yellow-bg-clr);
+}
+
+.card-title .card-description {
   color: var(--light-gray-clr);
   font-size: 0.9rem;
   line-height: 1.5;
