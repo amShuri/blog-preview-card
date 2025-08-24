@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white-bg-clr: hsl(0, 0%, 100%);
+  --yellow-bg-clr: hsl(47, 88%, 63%);
+  --light-gray-clr: hsl(0, 0%, 42%);
+  --dark-gray-clr: hsl(0, 0%, 7%);
+  --font-weight-bold: 800;
+  --font-weight-medium: 500;
+}
+
+@font-face {
+  font-family: figTree;
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+html,
+body {
+  font-family: figTree;
+  height: 100%;
+}
+
+body {
+  background-color: var(--yellow-bg-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white-bg-clr);
+  border: 1px solid var(--dark-gray-clr);
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem var(--dark-gray-clr);
+  padding: 1.25rem;
+  width: 346px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-img {
+  border-radius: 0.65rem;
+}
+
+.card-tag {
+  background-color: var(--yellow-bg-clr);
+  border-radius: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: var(--font-weight-bold);
+  padding: 0.45rem 0.65rem;
+  width: max-content;
+}
+
+.card-tag,
+.card-date {
+  color: var(--dark-gray-clr);
+}
+
+.card-tag,
+.author-info > p {
+  font-size: 0.825rem;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  font-weight: var(--font-weight-medium);
+}
+
+.card-title {
+  font-size: 1.35rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.card-description {
+  color: var(--light-gray-clr);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-info > img {
+  width: 28px;
+}
+
+.author-info > p {
+  color: var(--dark-gray-clr);
+  font-weight: var(--font-weight-bold);
+}
