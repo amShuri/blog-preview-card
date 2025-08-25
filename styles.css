@@ -20,15 +20,27 @@
 
 html,
 body {
-  font-family: figTree;
-  height: 100%;
+  font-family: 'figTree', sans-serif;
 }
 
 body {
   background-color: var(--yellow-bg-clr);
+}
+
+body,
+.wrapper {
+  height: 100vh;
+}
+
+.wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 100%;
 }
 
 .card {
@@ -36,8 +48,8 @@ body {
   border: 1px solid var(--dark-gray-clr);
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem var(--dark-gray-clr);
-  padding: 1.25rem;
-  width: 380px;
+  padding: clamp(0.9rem, 1.25rem, 1.5rem);
+  max-width: 380px;
 }
 
 .card-content {
